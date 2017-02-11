@@ -14,3 +14,13 @@
   color:rgba(288,288,288,0.8);
   font-family:Tahoma, sans-serif;
 }
+.jump span {
+      position: relative;
+      display: inline-block;
+      transition: transform 0.1s;
+      cursor: default;
+    }
+.jump span:hover {
+  transform:translateY(-20px) scale(1.5) rotate(10deg);
+  z-index: 1;
+}
