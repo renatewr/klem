@@ -7,4 +7,10 @@
   background-blend-mode: soft-light;
   background-size:cover;
   background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28vw;
+  color:rgba(288,288,288,0.8);
+  font-family:Tahoma, sans-serif;
 }
