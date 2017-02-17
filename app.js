@@ -1,10 +1,8 @@
-
-
-const heading = document.querySelector('.jump');
-
-
-function sparanWrap(word) {
-  return [...word].map(letter => `<span>${letter}</span>`).join('');
-}
-
-heading.innerHTML = sparanWrap(heading.textContent);
+fetch('/ads.js')
+       .then(function fetchthis(response) {
+           console.log(response, false);
+           return false;
+       }).catch(function(err) {
+          console.log(err, true);
+           return true;
+       });
