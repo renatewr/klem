@@ -28,7 +28,7 @@
   overflow:hidden;
   width: 90vw;
   margin:0 auto;
-  padding:20px 0;
+  padding:40px 0;
   position: relative;
 }
 .panes{
@@ -37,7 +37,7 @@
   list-style: none;
   position: relative;
   width: 90vw;
-  height: 80vh;
+  height: 60vh;
   overflow:hidden;
   /*animation:carousel 50s infinite;*/
 }
@@ -145,13 +145,15 @@ body
 {
 	width:100%;
 	padding: 40px 0;
+  background-color: #B26B00;
 }
 
 .logo
 {	
-	font-size: 48px;
+	font-size: 10vw;
+  text-shadow: 3px;
 	display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   letter-spacing:0.5em;
 }
 
