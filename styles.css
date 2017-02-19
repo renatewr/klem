@@ -1,4 +1,9 @@
 
+figure{
+  margin:0;
+  padding:0;
+}
+
 .main{
   width:100vw;
   height: 100vh;
@@ -152,7 +157,7 @@ body.two .content,
 body.one .content{
   text-align:center;  
   line-height:1.5em;
-  padding:10px 40px;
+  padding:10px 10px;
 }
 
 .site-content
@@ -162,10 +167,14 @@ body.one .content{
 }
 .site-content figure .image{
   object-fit: cover;
-object-position: 50% 60%;
-font-family: 'object-fit:cover; object-position: 50% 60%;';
-height: 50vh !important;
-width: 100%;
+  object-position: 50% 60%;
+  font-family: 'object-fit:cover; object-position: 50% 60%;';
+  height: 50vh !important;
+  width: 100%;
+  border-radius:6px;;
+}
+.site-content p{
+  padding:10 40px;
 }
 .site-header,
 .site-footer {
