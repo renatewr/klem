@@ -55,7 +55,7 @@
     height: 60vh;
     background-position: 50%;
     /*background-blend-mode: screen;   */
-    filter:sepia(.5);
+    filter:sepia(45%);
     box-sizing: border-box;  
     border: 10px solid #fff;
     border-radius: 8px;
@@ -66,10 +66,11 @@
   font-we: 700;
   letter-spacing: 10px;
   color:rgba(255,255,255,.6);
+  text-transform: uppercase;
 }
 
 li.one{    
-  background-image: url('./assets/cafe.jpg');
+  background-image: url('./assets/armiarm.jpg');
   background-position: 50% 100%;   
 }
 li.two{
@@ -157,12 +158,14 @@ body.one .content{
 .site-content
 {
 	flex:1;  
+  font-size: 25px;
 }
 .site-content figure .image{
   object-fit: cover;
 object-position: 50% 60%;
 font-family: 'object-fit:cover; object-position: 50% 60%;';
 height: 50vh !important;
+width: 100%;
 }
 .site-header,
 .site-footer {
@@ -203,7 +206,7 @@ height: 50vh !important;
 	/*border-bottom: 1px solid #927951;*/
 }
 nav > section{
-  flex: 1 0 50%;
+  flex: 1 1 50%;
 }
 
 .promotion a{
@@ -217,8 +220,7 @@ nav > section{
   text-decoration: none;  
 }
 .promotion a:hover span{
-  /*color:rgba(255, 230, 102,1);*/  
-  border:2px solid #FFF;
+  /*color:rgba(255, 230, 102,1);*/ 
 }
 .promotion a hr{
   flex-basis:100%;
@@ -240,7 +242,7 @@ nav > section{
   z-index: 0;
   font-size:26px;
 }
-.promotion a  h2{
+.promotion a h2{
   color:#333;
   letter-spacing:3px;
   animation:opentwo .5s;
@@ -254,14 +256,49 @@ nav > section{
 }
 .promotion a span{
   font-size:16px;
-  padding:5px 8px;
-  color:#333333;
+  padding:6px 12px;
+  color:rgba(255,255,255,1);
   background-color: #fff;
   text-align:center;
   animation: opentwo .55s;
-  border-radius: 2px;  
-  letter-spacing: 3px;
-  border:2px solid #eee6d6;
+  border-radius: 4px;  
+  letter-spacing: 2px;    
+  background-color:rgba(254, 183, 76,1);
+  border:1px solid rgba(254, 183, 76,1);
+  white-space: nowrap;
+}
+.promotion.home a span{
+  font-size:20px;
+}
+
+.businesscard-container{
+  display:flex;
+  
+}
+.businesscard-details{
+  display: flex;
+  width:100%;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.businesscard-portrait{
+  background-image: url('./assets/vcard.jpg');
+  height: 80px;
+    max-height: 80px;
+    width: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+    border: 2px solid rgba(242, 108, 79, 0.6);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    background-size:contain;    
+}
+.businesscard-name,.businesscard-email, .businesscard-phone{
+  flex: 1 0 100%;
+  font-size:20px;
 }
 
 
@@ -689,6 +726,15 @@ ol > li > ul > li:hover > a
 @keyframes css-carousel-fade {
 	0%, 20%, 100% { opacity: 0; }
 	5%, 15% { opacity: 1;}
+}
+
+
+
+@media (max-width:668px) {
+  nav > section{
+    flex: 1 1 100%;
+  }
+  
 }
 
 
