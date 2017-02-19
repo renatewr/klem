@@ -152,6 +152,8 @@ body.two{
 h1{
   text-align:center;
   letter-spacing: 3px;
+  font-weight: 400;
+  font-size:32px;
 }
 body.two .content,
 body.one .content{
@@ -195,7 +197,7 @@ body.one .content{
 
 .logo
 {	
-	font-size: 8vw;
+	font-size: 7vw;
   text-shadow: 3px;	
   letter-spacing:20px;
   flex-basis:33%;
