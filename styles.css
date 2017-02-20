@@ -50,6 +50,7 @@ figure{
     position:absolute;
     left:0;
     right:0;
+    transition: transform 5000ms linear 0s;
     animation: css-carousel-fade 30s linear infinite;
     float:left;
     opacity: 0;
@@ -185,10 +186,11 @@ body.one .content{
 .site-header
 {
 	width:100%;
-	padding: 10px 0;
+	padding: 10px 20px;
   /*background-color: #B26B00;*/
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  background-color:rgba(255, 198, 0, 1);
 }
 .one .site-header,
 .two .site-header{
@@ -197,12 +199,14 @@ body.one .content{
 
 .logo
 {	
-	font-size: 7vw;
-  text-shadow: 3px;	
-  letter-spacing:20px;
+	font-size: 6vw;
+  letter-spacing:10px;
   flex-basis:33%;
   color:rgba(254, 183, 76,.6);
-  text-shadow: 1px 1px 1px rgba(254, 183, 76,.8);
+  color:rgba(255, 198, 0, 1);
+  text-shadow: 1px 1px 1px rgba(255, 198, 0, .6);
+  
+  color:#fff;
 }
 
 .nav
@@ -237,7 +241,7 @@ nav > section{
   flex-basis:100%;
   margin:4px 0px 6px;
   color:rgba(254, 183, 76,1);
-  color:rgba(254, 183, 76,.4);
+  color:rgba(255, 198, 0, .6);
   border-style:solid;
 }
 
@@ -274,8 +278,8 @@ nav > section{
   animation: opentwo .55s;
   border-radius: 4px;  
   letter-spacing: 2px;    
-  background-color:rgba(254, 183, 76,1);
-  border:1px solid rgba(254, 183, 76,1);
+  background-color:rgba(255, 198, 0, 1);
+  border:1px solid rgba(255, 198, 0, 1);
   white-space: nowrap;
 }
 .promotion.home a span{
@@ -716,7 +720,7 @@ ol > li > ul > li:hover > a
 
 @keyframes carousel{
     0%    { left:0; opacity: 1;}
-    11%   { left:0; opacity: 0;}
+    11%   { left:0; opacity: 0; transform:scale(1.05,1.05);}
     12.5% { left:-100%; opacity: 1;}
     23.5% { left:-100%; opacity: 0;}
     25%   { left:-200%; opacity: 1;}
