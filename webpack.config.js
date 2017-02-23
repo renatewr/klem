@@ -1,14 +1,19 @@
 const webpack = require('webpack');
+const path = require('path');
+// importing plugins that do not come by default in webpack
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const nodeEnv = process.env.NODE_ENV || 'production';
 
 module.exports = {
   devtool: 'source-map',
   entry: {
-    filename: './app.js',
+    bundle: './src/app.js',
+    styles: './styles.less',
   },
   output: {
-    filename: '_build/bundle.js',
+    path: '_build',
+    filename: '[name].js',
   },
   module: {
     loaders: [
@@ -21,6 +26,13 @@ module.exports = {
             ['es2015', { modules: false }],
           ],
         },
+      },
+      {
+        test: /\.less$/,
+        loader: ExtractTextPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: 'css-loader!autoprefixer-loader!less-loader',
+        }),
       },
     ],
   },
@@ -35,6 +47,7 @@ module.exports = {
       },
       sourceMap: true,
     }),
+    new ExtractTextPlugin({ filename: 'styles.css', allChunks: false }),
     // environment
     new webpack.DefinePlugin({
       'process.env': { NODE_ENV: JSON.stringify(nodeEnv) },

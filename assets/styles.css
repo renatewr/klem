@@ -83,7 +83,7 @@ li.one{
   background-position: 50% 100%;   
 }
 li.two{
-  background-image: url('../assets/avis.jpg');  
+  background-image: url('./assets/avis.jpg');  
   animation-delay:5s;
 }
 li.three{
