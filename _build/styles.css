@@ -38,6 +38,7 @@ body {
           flex: none;
   /* 2 */
   text-align: center;
+  font-size: 14px;
 }
 .site .site-header {
   width: 100%;
@@ -206,7 +207,7 @@ body {
   border-radius: 8px;
 }
 .panes li.one {
-  background-image: url('/assets/armiarm.jpg');
+  background-image: url('/assets/main_cut.png');
   background-position: 50% 100%;
 }
 .panes li.two {
@@ -226,12 +227,12 @@ body {
           animation-delay: 15s;
 }
 .panes li.five {
-  background-image: url('/assets/cooking.jpg');
+  background-image: url('/assets/klem.jpg');
   -webkit-animation-delay: 20s;
           animation-delay: 20s;
 }
 .panes li.six {
-  background-image: url('/assets/klem.jpg');
+  background-image: url('/assets/armiarm.jpg');
   -webkit-animation-delay: 25s;
           animation-delay: 25s;
 }
