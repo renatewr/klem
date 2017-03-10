@@ -70,6 +70,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.site .site-header .logo .logo-img {
   height: 200px;
   width: 200px;
 }
