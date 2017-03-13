@@ -160,8 +160,6 @@ body {
   height: 50vh !important;
   width: 100%;
   border-radius: 6px 6px 0 0;
-  -webkit-filter: sepia(40%);
-          filter: sepia(40%);
 }
 .site-content figure figcaption {
   padding: 10px 10px;
@@ -243,8 +241,6 @@ body {
   height: 60vh;
   background-position: 50%;
   /*background-blend-mode: screen;   */
-  -webkit-filter: sepia(45%);
-          filter: sepia(45%);
   box-sizing: border-box;
   border: 10px solid #fff;
   border-radius: 8px;
@@ -254,7 +250,7 @@ body {
   background-position: 50% 100%;
 }
 .panes li.two {
-  background-image: url('/assets/avis.jpg');
+  background-image: url('/assets/coffee.jpg');
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
