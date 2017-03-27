@@ -1,10 +1,10 @@
 /*eslint-disable*/
 //const http = require('http');
 
-const express = require('express');
+//const express = require('express');
 
-const server = express();
-server.use(express.static(__dirname ));
+//const server = express();
+//server.use(express.static(__dirname + '/dist/'));
 
 //const server = http.createServer(function(req, res) {
   //res.writeHead(200);
@@ -12,9 +12,9 @@ server.use(express.static(__dirname ));
   //res.end();
 //});
 
-const port = 10001;
+//const port = 10001;
 
-server.listen(port, function() {
-  console.log('server listening on port' + port);
-});
+//server.listen(port, function() {
+  //console.log('server listening on port' + port);
+//});
 /*eslint-enable*/

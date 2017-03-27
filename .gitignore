@@ -11,3 +11,4 @@ config/local.json
 tmp/**/*
 assets/bundles/**/*
 config/version.txt
+dist
