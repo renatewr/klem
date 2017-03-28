@@ -1,29 +1,36 @@
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+  margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
 @minwidt: 320px;
 
 @darkorange:rgba(199, 108, 12, 1);
 @brownish:#a19374;
 @darktext:#444;
 
+
+
 @font-face {
-  font-family: 'Courier Prime';
-  src: url('fonts/courier-prime-webfont.woff2') format('woff2'),
-       url('fonts/courier-prime-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Cabin', sans-serif;
+  
 }
 
 *{
   box-sizing: border-box;
 }
-figure{
-  margin:0;
-  padding:0;  
-}
 
 body {
 	
 	//font-family: 'Lato', sans-serif;
-  font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+  font-family: 'Cabin', sans-serif;
 	font-size: 20px;
 	margin: 0 !important;
   /*background-image: radial-gradient(closest-side, transparent 98%, rgba(256,256,256,.3) 99%),*/
@@ -129,7 +136,7 @@ nav {
       display: block;
       float: right;
       height: 35px;
-      margin-top: 1em;
+      margin-top: 2em;
       width: 35px;
     }
     
@@ -141,18 +148,17 @@ nav {
   .site-header {
   	width:100%;
     min-width: @minwidt;
-  	padding: 10px 20px;
+  	//padding: 10px 20px;
     /*background-color: #B26B00;*/    
     background-color:rgba(255, 198, 0, 1);
     background-color: #FFF;  
     box-shadow: 2px 2px 2px rgba(250,184,66, 0.8);
     background-color: #fff;
     
-    min-width: 100%;
-    
     .logo{   
       background-color: #fff;
       display: inline-block;
+      margin: 1em 0;
       
       a{
         color:rgba(254, 183, 76,.6);
@@ -236,16 +242,22 @@ nav {
   font-size: 25px;
   min-width: @minwidt;
   color:@darktext;
-  padding-top:10px;
+  padding-top:20px;
+  
   h1{
     text-align:center;
     letter-spacing: 3px;
     font-weight: 400;
     font-size:32px;
+    line-height: 2em;
+    padding:10px;
+    color:@darkorange;
+    font-weight: bold;
   }
   
   figure {
-    max-width:1000px;
+    padding:20px 0px;
+    max-width: 1200px;
     margin:0 auto;
     .image{
       object-fit: cover;
@@ -265,7 +277,7 @@ nav {
     }
   
   p{
-    padding:10 40px;
+    padding:10px 10px;
     letter-spacing:1;
     line-height: 1.5em;
     max-width: 900px;
