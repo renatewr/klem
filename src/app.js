@@ -2,7 +2,6 @@
 import headerMarkup from './header';
 import objectFitImages from 'object-fit-images'
 
-console.log('yo');
 
 require('./styles.less');
 require('./logo_2.JPG');
@@ -51,4 +50,3 @@ function openOfflineReady() {
 const bodyEl = document.getElementsByTagName('nav')[0];
 bodyEl.innerHTML = headerMarkup();
 objectFitImages();
-
