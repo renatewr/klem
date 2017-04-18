@@ -1,10 +1,13 @@
 
+const logo = require('./LOGO.svg');
+
 export default function headerMarkup() {
   return `
   <nav class="wrapper">
     <div class="logo-img logo">
-      <a href="/index.html"><img src="./logo_2.JPG"></a>
+      <a href="/index.html">${logo}</a>
     </div>
+    <div><span>Klem</span></div>
     <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="label-toggle"></label>
     </input>
