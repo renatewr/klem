@@ -7,7 +7,7 @@ export default function headerMarkup() {
     <div class="logo-img logo">
       <a href="/index.html">${logo}</a>
     </div>
-    <div><span>Klem</span></div>
+    <div class="logo-klem"><span>Klem</span></div>
     <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="label-toggle"></label>
     </input>
