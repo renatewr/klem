@@ -146,29 +146,7 @@ module.exports = {
       // 'process.env': { NODE_ENV: JSON.stringify(nodeEnv) },
     // }),
     new OfflinePlugin({
-      safeToUseOptionalCaches: true,
-
-      caches: {
-        main: [
-          'main.js',
-          'main.css',
-          'index.html',
-        ],
-        additional: [
-          '*.woff',
-          '*.woff2',
-        ],
-        optional: [
-          ':rest:',
-        ],
-      },
-
-      ServiceWorker: {
-        events: true,
-      },
-      AppCache: {
-        events: false,
-      },
+      responseStrategy: 'network-first',
     }),
   ],
 };
