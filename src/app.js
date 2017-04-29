@@ -4,7 +4,6 @@ import objectFitImages from 'object-fit-images'
 
 
 require('./styles.less');
-require('./logo_2.JPG');
 
 var OfflinePlugin = require('offline-plugin/runtime');
 
