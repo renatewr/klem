@@ -114,8 +114,8 @@ module.exports = {
       template: 'smerteoglindring.html',
     }),
     new HtmlWebpackPlugin({
-      filename: 'velvære.html',
-      template: 'velvære.html',
+      filename: 'velvare.html',
+      template: 'velvare.html',
     }),
     new HtmlWebpackPlugin({
       filename: 'hjelpihverdagen.html',
